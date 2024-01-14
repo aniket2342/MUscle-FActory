@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle FActory</title>
+    <link rel="shortcut icon" href="./logo2.png"  type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Genos:wght@100&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<script>
+  // Toggle mobile menu visibility
+  document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      var mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<body class="bg-green-950">
+
+  <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 ">
+  <div class="navbar bg-green-950 p-4 ">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" id="logo" class="text-white text-xl font-libre  ">MUscleFActory</a>
+      <div class="hidden md:flex space-x-4 ">
+            <ul class="flex gap-4 text-white text-lg font-sans">
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#service">
+                    <li >Service</li>
+                </a>
+                <a href="#gallery">
+                    <li>Gallery</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+      </nav>
+        <!-- Mobile Menu - Shown on small screens -->
+
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu - Hidden by default -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 p-4">
+            <a href="#" class="block text-white mb-2">Home</a>
+            <a href="#" class="block text-white mb-2">About</a>
+            <a href="#" class="block text-white mb-2">Service</a>
+            <a href="#" class="block text-white mb-2">Gallery</a>
+            <a href="#" class="block text-white mb-2">Contact</a>
+        </div>
+    </div>
+</div>
+    <!--herosection-->
+    <div id="home" class="relative bg-cover bg-center h-screen flex items-center" style="background-image: url('./hero.jpg');">
+      <!-- Text Content -->
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Shape Your Body</h1>
+        <p class="text-lg md:text-xl mb-8">STRONG <span class="text-red-800">TRAINING</span> HARD</p>
+        <a href="#" class="bg-green-950 hover:bg-white text-black font-bold py-2 px-4 rounded-md">GET INFO</a>
+      </div>
+  
+    </div>
+
+    <!--about section-->
+   
+    <div id="about" class=" container max-w-screen-lg mx-auto p-4">
+    
+      <!-- About Section -->
+      <section class="flex flex-col md:flex-row items-center md:space-x-8 my-8">
+    
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img src="./about1.jpg" alt="Your Image" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+    
+        <!-- Text Content -->
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-4 text-center">About Us</h2>
+          <p class="text-white text-justify">
+            At Muscle Factory, we are passionate about helping individuals achieve their fitness goals and transform their lives. Founded in 2004, our state-of-the-art facilities provide a supportive and motivating environment for fitness enthusiasts of all levels.
+            Our dedicated team of certified trainers and nutrition experts are committed to guiding you on your fitness journey. Whether you're looking to build muscle, lose weight, or enhance your overall well-being, we have the expertise and resources to assist you every step of the way.
+          </p>
+          <p class="text-white mt-4 text-justify">
+            At Muscle Factory, we believe in fostering a sense of community. Our fitness classes, personalized training programs, and cutting-edge equipment are designed to cater to diverse fitness preferences and goals. Join us and become part of the Muscle Factory family today!
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!--service-->
+
+    <div>
+        <p class="text-center text-red-600 font-bold text-2xl font-sans tracking-widest pt-7 "> Our Service</p>   
+    </div>
+        <div class="grid grid-cols-3 bg-green-950 lg:gap-3 justify-items-center gap-2 ">
+        <div class="py-10  mt-10 " >
+            <div class="rounded overflow-hidden shadow-lg max-w-sm ml-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500 ">
+                <img src="Gym.jpg" alt="" class="h-52 w-auto" >
+                <div class="px-6 py-4">
+                    <div>
+                        <p class="text-white">Gym </p>
+                        <button class=" mt-1 px-1 py-1 rounded-none  text-white bg-red-600 hover:bg-black">GET INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 mt-10 mb-10 ">
+            <div class="rounded overflow-hidden shadow-lg max-w-sm transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500">
+                <img src="yoga1.jpg" alt=""  class=" w-auto ">
+                <div class="px-6 py-4">
+                    <div>
+                        <p class="text-white">Yoga </p>
+                        <button class="mt-1 px-1 py-1 rounded-none bg-red-600 text-white hover:bg-black">GET INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 mt-10">
+            <div class="rounded overflow-hidden shadow-lg max-w-sm mr-5 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500">
+                <img src="boxing.jpg" alt=""  class="h-52 w-80">
+                <div class="px-6 py-4">
+                    <div>
+                        <p class="text-white">Boxing</p>
+                        <button class=" mt-1 px-1 py-1 rounded-none bg-red-600 text-white hover:bg-black">GET INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- registration-->
+
+    <div class="relative bg-cover bg-center h-screen flex items-center" style="background-image: url('./content1.jpg');">
+
+      <!-- Text Content -->
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-red-800 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">REGISTRATION NOW TO GET MORE DEAL</h1>
+        <p class="text-lg md:text-xl mb-8">HEALTH,BEAUTY AND FITNESS MEET..</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Get Course</a>
+      </div>
+  
+    </div>
+
+
+    <!--plan section-->
+
+    <section class="text-white body-font overflow-hidden">
+        <div id="service" class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-red-600">OUR PLAN</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-red-600">Choose Your Pricing Plan</p>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500">
+              <div class="h-full p-6 rounded-lg border-2 border-red-600 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-white">Demo</h2>
+                <h1 class="text-5xl text-white pb-4 mb-4 border-b border-white leading-none">Free</h1>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Free Riding
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Unlimited Equipment 
+                </p>
+                <p class="flex items-center text-white mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>No Time Restriction
+                </p>
+                <button class="flex items-center mt-auto text-black bg-white border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500">
+              <div class="h-full p-6 rounded-lg border-2 border-red-600 flex flex-col relative overflow-hidden">
+                <span class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-white">Class Drop-in</h2>
+                <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-white">
+                  <span>$4.81</span>
+                  <span class="text-lg ml-1 font-normal text-white">/mo</span>
+                </h1>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Personal Trainer
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black  text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>weight Losing Class
+                </p>
+                <p class="flex items-center text-white  mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Month to Month
+                </p>
+                <p class="flex items-center text-white mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Free Riding 
+                </p>
+                <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500">
+              <div class="h-full p-6 rounded-lg border-2 border-red-600 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium text-white">6 Month Unlimited</h2>
+                <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-red-600">
+                  <span>$21.64</span>
+                  <span class="text-lg ml-1 font-normal text-white">/mo</span>
+                </h1>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Free Riding
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Personal Training
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>unlimited Equipment
+                </p> 
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>No time Restriction
+                </p>
+                <p class="flex items-center text-white mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>weight Losing Classes
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-500">
+              <div class="h-full p-6 rounded-lg border-2 border-red-600 flex flex-col relative overflow-hidden">
+                <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
+                <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-white">
+                  <span>$28.85</span>
+                  <span class="text-lg ml-1 font-normal text-white">/mo</span>
+                </h1>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>free Riding
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Unlimited Equipment
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Personal Training
+                </p>
+                <p class="flex items-center text-white mb-2">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>No Time Restriction
+                </p>
+                <p class="flex items-center text-white mb-6">
+                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-black text-white rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Take Stream Free
+                </p>
+                <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Gallery Section -->
+
+      <section class="text-red-600 body-font ">
+        <div id="gallery" class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex w-full mb-20 flex-wrap">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-red-600 lg:w-1/3 lg:mb-0 mb-4">Gallery</h1>
+            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">At MUscleFActory, our mission is simple yet powerful: to
+              empower individuals to live healthier, happier lives. We believe that fitness is not just about looking
+              good; it's about feeling great, inside and out. Our team is committed to providing you with the tools,
+              support, and guidance you need to reach your fitness goals.</p>
+          </div>
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-1/2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-500">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="Gallery/gallery1.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-500">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="Gallery/gallery2.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-500">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="Gallery/gallery3.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2 ">
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="Gallery/gallery4.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-500">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="Gallery/gallery5.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-500">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="Gallery/gallery6.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--Contact us-->
+
+
+      <div id="contact" class="max-w-screen-lg mx-auto p-4">
+
+        <!-- Contact Us Section -->
+        <section class="text-center my-8">
+          <h2 class="text-4xl font-bold mb-4">Contact Muscle Factory</h2>
+          <p class="text-white">
+            Have questions or inquiries? Reach out to us by filling out the form below, and our team will get back to you as soon as possible.
+          </p>
+    
+          <!-- Contact Form -->
+          <form class="mt-8" action="https://formspree.io/f/mrgnbezn" method="post">
+            <!-- Name Input -->
+            <div class="mb-4">
+              <label for="name" class="block text-white text-sm font-bold mb-2">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" class="w-full py-2 px-3 border border-gray-300 rounded-md">
+            </div>
+    
+            <!-- Email Input -->
+            <div class="mb-4">
+              <label for="email" class="block text-white text-sm font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" class="w-full py-2 px-3 border border-gray-300 rounded-md">
+            </div>
+    
+            <!-- Message Textarea -->
+            <div class="mb-4">
+              <label for="message" class="block text-white  text-sm font-bold mb-2">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="4" class="w-full py-2 px-3 border border-gray-300 rounded-md"></textarea>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">Submit</button>
+          </form>
+        </section>
+      </div>
+
+      <!--Testimonial-->
+
+
+      <div class="max-w-screen-lg mx-auto p-4">
+
+        <!-- Testimonials Section -->
+        <section class="text-center my-8 ">
+    
+          <h2 class="text-4xl font-bold mb-8">What Our Clients Say</h2>
+    
+          <!-- Testimonial Cards -->
+          <div class="flex flex-col md:flex-row md:space-x-4">
+    
+            <!-- Testimonial Card 1 -->
+            <div class="flex-1 bg-white p-6 rounded-md shadow-md mb-4 md:mb-0">
+              <p class="text-gray-700">"I can't thank Muscle Fitness enough for transforming my fitness journey! Joining the Muscle Fitness community has been a game-changer for me."</p>
+              <p class="text-black font-bold mt-4">John Doe</p>
+            </div>
+    
+            <!-- Testimonial Card 2 -->
+            <div class="flex-1 bg-white p-6 rounded-md shadow-md">
+              <p class="text-gray-700">"Muscle Fitness isn't just about building muscle; it's about cultivating a mindset of strength, discipline, and overall well-being. My journey with Muscle Fitness has been transformative, and I can confidently say that it's the best investment I've made in my health."</p>
+              <p class="text-black font-bold mt-4">Jane Smith</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--foter-->
+
+      
+    
+</body>
+
+</html>
